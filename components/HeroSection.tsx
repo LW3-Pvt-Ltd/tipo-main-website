@@ -5,8 +5,8 @@ export default function HeroSection() {
     <section className="relative w-full flex flex-col items-center overflow-hidden">
       {/* Hero area — pure black to match bottle */}
       <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
-        {/* Bottle + Discover — seamless black-on-black blend */}
-        <div className="relative z-10 flex items-center gap-8">
+        {/* Bottle centered + Discover positioned beside it */}
+        <div className="relative z-10 flex flex-col items-center">
           <Image
             src="/Tipo-website/images/tipo-bottle.jpeg"
             alt="TI:PO Po:ro Apong rice wine bottle"
@@ -17,7 +17,7 @@ export default function HeroSection() {
           />
           <a
             href="#the-craft"
-            className="text-[10px] uppercase tracking-[0.25em] text-brand-text whitespace-nowrap hover:text-brand-gold transition-colors duration-300 cursor-pointer"
+            className="absolute right-[-100px] top-1/2 -translate-y-1/2 text-[10px] uppercase tracking-[0.25em] text-brand-text whitespace-nowrap hover:text-brand-gold transition-colors duration-300 cursor-pointer"
           >
             Discover &gt;&gt;
           </a>

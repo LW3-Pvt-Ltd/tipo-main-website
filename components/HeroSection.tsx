@@ -16,7 +16,7 @@ export default function HeroSection() {
             }}
           >
             <Image
-              src="/Tipo-website/images/tipo-bottle.jpeg"
+              src="/Tipo-website/images/tipo-bottle-latest.webp"
               alt="TI:PO Po:ro Apong rice wine bottle"
               width={1200}
               height={2700}

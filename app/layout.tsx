@@ -16,9 +16,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "TIPO — Premium Wine",
+  title: "TI:PO — Po:Ro Apong",
   description:
-    "TIPO — A premium wine brand rooted in heritage, craftsmanship, and tradition.",
+    "TI:PO — A premium traditional Indian rice wine, handcrafted by women from the Brahmaputra Valley, Assam.",
+  icons: {
+    icon: "/Tipo-website/favicon.png",
+  },
 };
 
 export default function RootLayout({

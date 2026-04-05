@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Hero area — pure black to match bottle */}
       <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
         {/* Bottle centered + Discover positioned beside it */}
-        <div className="relative z-10 flex flex-col items-center translate-y-[120px]">
+        <div className="relative z-10 flex flex-col items-center translate-y-[100px]">
           <div
             style={{
               maskImage:
@@ -18,9 +18,9 @@ export default function HeroSection() {
             <Image
               src="/Tipo-website/images/tipo-bottle.jpeg"
               alt="TI:PO Po:ro Apong rice wine bottle"
-              width={1200}
-              height={2700}
-              className="object-contain max-h-[128vh]"
+              width={1800}
+              height={4050}
+              className="object-contain max-h-[192vh]"
               priority
             />
           </div>

@@ -30,7 +30,7 @@ export default function MapSection() {
         </div>
 
         {/* Map + Bottle */}
-        <div className="relative mb-16" style={{ marginTop: "-150px" }}>
+        <div className="relative mb-16" style={{ marginTop: "-110px" }}>
           <Image
             src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"

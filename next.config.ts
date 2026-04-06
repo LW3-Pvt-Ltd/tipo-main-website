@@ -3,6 +3,15 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   basePath: "/Tipo-website",
+  generateBuildId: () => Date.now().toString(),
+  headers: async () => [
+    {
+      source: "/(.*)",
+      headers: [
+        { key: "Cache-Control", value: "no-cache, no-store, must-revalidate" },
+      ],
+    },
+  ],
   images: {
     unoptimized: true,
     dangerouslyAllowSVG: true,

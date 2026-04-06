@@ -10,9 +10,9 @@ export default function HeroSection() {
           <div
             style={{
               maskImage:
-                "radial-gradient(ellipse 65% 75% at 50% 45%, black 40%, transparent 100%)",
+                "radial-gradient(ellipse 75% 85% at 50% 45%, black 60%, transparent 100%)",
               WebkitMaskImage:
-                "radial-gradient(ellipse 65% 75% at 50% 45%, black 40%, transparent 100%)",
+                "radial-gradient(ellipse 75% 85% at 50% 45%, black 60%, transparent 100%)",
             }}
           >
             <Image

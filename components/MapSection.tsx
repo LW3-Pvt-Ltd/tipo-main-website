@@ -40,7 +40,7 @@ export default function MapSection() {
           />
 
           {/* Bottle overlay — flush to right edge, boundary touches viewport edge */}
-          <div className="hidden md:block absolute -bottom-20" style={{ right: "-266px", marginTop: "40px" }}>
+          <div className="hidden md:block absolute" style={{ right: "-266px", bottom: "-120px" }}>
             <Image
               src="/Tipo-website/images/bottle.jpeg"
               alt="TI:PO bottle angled presentation"

@@ -29,8 +29,8 @@ export default function MapSection() {
           </p>
         </div>
 
-        {/* Map + Bottle */}
-        <div className="relative mb-16" style={{ marginTop: "-110px" }}>
+        {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
+        <div className="relative mb-16 mt-6 md:-mt-[110px]">
           <Image
             src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
@@ -61,14 +61,14 @@ export default function MapSection() {
             />
           </div>
 
-          {/* Bottle overlay — mobile: centered, smaller */}
+          {/* Bottle overlay — mobile: pushed to right edge */}
           <div
-            className="md:hidden flex justify-center mt-4"
+            className="md:hidden flex justify-end mt-4 -mr-10"
             style={{
               maskImage:
-                "radial-gradient(ellipse 75% 80% at 50% 50%, black 45%, transparent 100%)",
+                "radial-gradient(ellipse 75% 80% at 60% 50%, black 45%, transparent 100%)",
               WebkitMaskImage:
-                "radial-gradient(ellipse 75% 80% at 50% 50%, black 45%, transparent 100%)",
+                "radial-gradient(ellipse 75% 80% at 60% 50%, black 45%, transparent 100%)",
             }}
           >
             <Image

@@ -47,7 +47,7 @@ export default function HeroSection() {
         </div>
 
         {/* Shape divider — fades himalaya into the section below */}
-        <div className="absolute bottom-[-60px] left-0 w-full z-10 pointer-events-none">
+        <div className="absolute bottom-[-120px] left-0 w-full z-10 pointer-events-none">
           <img
             src="/Tipo-website/images/himalaya-shape-divider.svg"
             alt=""

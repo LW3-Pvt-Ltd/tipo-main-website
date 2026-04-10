@@ -46,6 +46,16 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
+        {/* Shape divider — fades himalaya into the section below */}
+        <div className="absolute bottom-0 left-0 w-full z-10 pointer-events-none">
+          <img
+            src="/Tipo-website/images/himalaya-shape-divider.svg"
+            alt=""
+            className="w-full block"
+            aria-hidden="true"
+          />
+        </div>
+
         {/* Text content — positioned over the himalaya image */}
         <div className="relative z-10 pt-[180px] md:pt-[240px] pb-16 md:pb-20">
           <div className="max-w-4xl mx-auto px-10 md:px-16 lg:px-20 text-center">

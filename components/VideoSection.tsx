@@ -1,6 +1,6 @@
 export default function VideoSection() {
   return (
-    <section className="bg-grey-800 py-20 md:py-28">
+    <section className="py-20 md:py-28" style={{ backgroundColor: "#434648" }}>
       <div className="mx-auto px-6 md:px-10 lg:px-14 flex flex-col items-center gap-8">
         {/* Label */}
         <span className="text-[14px] uppercase tracking-[0.25em] text-brand-gold font-semibold animate-glow" style={{ marginTop: "-20px" }}>

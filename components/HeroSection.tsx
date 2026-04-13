@@ -34,7 +34,7 @@ export default function HeroSection() {
       </div>
 
       {/* Himalaya background with built-in shape divider cutout */}
-      <div className="w-full relative" style={{ minHeight: "51vw" }}>
+      <div className="w-full relative" style={{ minHeight: "58vw" }}>
         {/* Himalaya new image — black cutout at top blends seamlessly with hero */}
         <div className="absolute inset-0">
           <Image

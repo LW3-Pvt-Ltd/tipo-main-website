@@ -12,8 +12,8 @@ export default function StoryIntro() {
               src="/Tipo-website/images/herb-collector.webp"
               alt="Women herb collectors gathering botanicals in the Himalayan foothills"
               width={580}
-              height={480}
-              className="w-full h-auto object-cover"
+              height={360}
+              className="w-full h-auto object-cover rounded-2xl"
             />
           </div>
 

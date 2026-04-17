@@ -4,18 +4,6 @@ export default function CellarSection() {
   return (
     <section className="bg-brand-black py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
-        {/* Sub-headings above */}
-        <div className="mb-10">
-          <div className="flex flex-col gap-2">
-            <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
-              Technology is the valet,
-            </span>
-            <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold">
-              not the star.
-            </h2>
-          </div>
-        </div>
-
         {/* Two-column: wider image left, text right */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-x-16 gap-y-12 items-start">
           {/* Left — wider image (3 cols) */}
@@ -25,12 +13,20 @@ export default function CellarSection() {
               alt="Traditional winery with worker overseeing the process"
               width={720}
               height={500}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-2xl"
             />
           </div>
 
           {/* Right — text (2 cols) */}
           <div className="md:col-span-2 flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
+              <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
+                Technology is the valet,
+              </span>
+              <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold">
+                not the star.
+              </h2>
+            </div>
             <p className="font-serif text-brand-gold/80 text-sm italic mb-2">
               Tipo did not reinterpret Po:ro Apong.
             </p>

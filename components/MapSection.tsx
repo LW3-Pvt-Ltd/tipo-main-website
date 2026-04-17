@@ -83,7 +83,7 @@ export default function MapSection() {
         </div>
 
         {/* Contact & Distribution */}
-        <div className="text-center mt-[440px] md:mt-[440px]">
+        <div className="text-center mt-[400px] md:mt-[400px]">
           <span className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium block mb-4">
             Contact &amp; Distribution
           </span>

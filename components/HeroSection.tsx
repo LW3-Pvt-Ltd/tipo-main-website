@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="relative z-10 flex flex-col items-center translate-y-[40px]">
           <div
             style={{
-              transform: "translateY(120px) scale(1.5)",
+              transform: "scale(1.5)",
               transformOrigin: "top center",
               maskImage:
                 "radial-gradient(ellipse 70% 95% at 50% 45%, black 50%, transparent 95%)",
@@ -36,7 +36,7 @@ export default function HeroSection() {
       </div>
 
       {/* Himalaya background with built-in shape divider cutout */}
-      <div className="w-full relative" style={{ minHeight: "61vw" }}>
+      <div className="w-full relative z-20" style={{ minHeight: "61vw" }}>
         {/* Himalaya new image — black cutout at top blends seamlessly with hero */}
         <div className="absolute inset-0">
           <Image

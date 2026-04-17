@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-black: #141210;
-  --color-brand-darkgray: #0a0908;
+  --color-brand-black: #000000;
+  --color-brand-darkgray: #111111;
   --color-brand-silver: #d0cfc9;
   --color-brand-gold: #c9a84c;
   --color-brand-goldlight: #e2c97e;
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom, #0a0908 0%, #141210 30%, #141210 70%, #0a0908 100%);
+  background: var(--color-brand-black);
   color: var(--color-brand-offwhite);
   font-family: var(--font-sans);
   overflow-x: hidden;

@@ -45,7 +45,6 @@ export default function HeroSection() {
             fill
             className="object-cover object-top"
           />
-          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         {/* Text content — positioned over the himalaya image */}

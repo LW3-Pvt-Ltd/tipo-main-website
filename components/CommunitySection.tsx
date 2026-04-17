@@ -11,7 +11,7 @@ export default function CommunitySection() {
             alt="Women of the Self Help Groups in traditional dresses"
             width={580}
             height={500}
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover rounded-2xl"
           />
         </div>
 

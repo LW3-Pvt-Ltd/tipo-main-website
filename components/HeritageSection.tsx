@@ -42,7 +42,7 @@ export default function HeritageSection() {
               alt="Women brewmasters of the village in traditional attire"
               width={560}
               height={480}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-2xl"
             />
           </div>
         </div>

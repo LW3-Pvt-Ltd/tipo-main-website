@@ -32,7 +32,7 @@ export default function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="text-[11px] uppercase tracking-[0.14em] transition-all duration-300 border-b border-transparent hover:border-brand-gold pb-0.5"
+                className="font-cinzel text-[11px] uppercase tracking-[0.14em] transition-all duration-300 border-b border-transparent hover:border-brand-gold pb-0.5"
                 style={{ color: "#D4922A" }}
               >
                 {link.label}
@@ -77,7 +77,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-[12px] uppercase tracking-[0.14em] transition-all duration-300"
+                className="font-cinzel text-[12px] uppercase tracking-[0.14em] transition-all duration-300"
                 style={{ color: "#D4922A" }}
               >
                 {link.label}

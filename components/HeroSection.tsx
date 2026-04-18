@@ -6,10 +6,10 @@ export default function HeroSection() {
       {/* Hero area — pure black to match bottle */}
       <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
         {/* Bottle centered + Discover positioned beside it */}
-        <div className="relative z-10 flex flex-col items-center translate-y-[40px]">
+        <div className="relative z-10 flex flex-col items-center translate-y-[-20px]">
           <div
             style={{
-              transform: "translateX(20px) scale(1.5)",
+              transform: "translateX(20px) scale(1.2)",
               transformOrigin: "top center",
               maskImage:
                 "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
@@ -36,7 +36,7 @@ export default function HeroSection() {
       </div>
 
       {/* Himalaya background with built-in shape divider cutout */}
-      <div className="w-full relative z-20" style={{ minHeight: "61vw" }}>
+      <div className="w-full relative z-20 -mt-[60px]" style={{ minHeight: "61vw" }}>
         {/* Himalaya new image — black cutout at top blends seamlessly with hero */}
         <div className="absolute inset-0">
           <Image

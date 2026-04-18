@@ -4,27 +4,66 @@ export default function MapSection() {
   return (
     <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
-        {/* Welcome heading */}
-        <div className="text-center mb-4">
-          <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium block mb-3">
-            Welcome
-          </span>
-          <h2 className="font-serif text-2xl md:text-4xl leading-snug text-brand-gold">
-            TiPo&apos;s Po:Ro Apong
-            <br />
-            to your world
+        {/* Welcome heading + culture quote */}
+        <div className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20">
+          <h2
+            className="text-xl md:text-2xl leading-snug"
+            style={{
+              color: "#D4922A",
+              fontFamily: '"Mainlux", "Inter", sans-serif',
+            }}
+          >
+            <span
+              style={{
+                display: "block",
+                fontWeight: 700,
+                letterSpacing: "0.18em",
+              }}
+            >
+              Welcome
+            </span>
+            <span
+              style={{
+                display: "block",
+                fontWeight: 300,
+                letterSpacing: "0.08em",
+              }}
+            >
+              TiPo&apos;s Po:Ro Apong
+            </span>
+            <span
+              style={{
+                display: "block",
+                fontWeight: 300,
+                letterSpacing: "0.08em",
+              }}
+            >
+              to your world
+            </span>
           </h2>
-        </div>
-
-        {/* Culture quote */}
-        <div className="max-w-3xl mx-auto text-center mb-0">
-          <p className="font-serif text-brand-gold/80 text-lg md:text-xl italic leading-relaxed">
-            Every culture has a fermentation that is unique to them
-          </p>
-          <p className="font-serif text-brand-gold/80 text-lg md:text-xl italic leading-relaxed">
-            Japan has Sak&eacute;, Korea has Soju, Europe has Wine.
-          </p>
-          <p className="font-serif text-brand-gold text-lg md:text-xl font-medium leading-relaxed mt-2">
+          <div
+            className="flex flex-col gap-1"
+            style={{
+              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+              fontWeight: 300,
+            }}
+          >
+            <p className="text-[14px] leading-[1.8] text-brand-text">
+              Every culture has a fermentation that is unique to them.
+            </p>
+            <p className="text-[14px] leading-[1.8] text-brand-text">
+              Japan has Sak&eacute;, Korea has Soju, Europe has Wine.
+            </p>
+          </div>
+          <p
+            className="text-[16px] leading-[1.4]"
+            style={{
+              marginTop: "4px",
+              color: "#D4922A",
+              fontFamily: '"Mainlux", "Inter", sans-serif',
+              fontWeight: 700,
+            }}
+          >
             India has Po:Ro Apong.
           </p>
         </div>

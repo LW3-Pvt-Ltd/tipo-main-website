@@ -82,14 +82,23 @@ export default function MapSection() {
           </div>
         </div>
 
-        {/* Contact & Distribution */}
-        <div className="text-center mt-[400px] md:mt-[400px]">
-          <span className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium block mb-4">
-            Contact &amp; Distribution
-          </span>
-          <p className="text-[12px] leading-[1.85] text-brand-text">
-            +91 88220 92973 &nbsp;|&nbsp; info@heritagetipo.com
-          </p>
+        {/* Motif + Contact & Distribution */}
+        <div className="mt-[400px] md:mt-[400px]">
+          <Image
+            src="/Tipo-website/images/motif-new.webp"
+            alt="Decorative motif"
+            width={600}
+            height={60}
+            className="mx-auto block w-[280px] h-auto"
+          />
+          <div className="text-center mt-[45px]">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium block mb-4">
+              Contact &amp; Distribution
+            </span>
+            <p className="text-[12px] leading-[1.85] text-brand-text">
+              +91 88220 92973 &nbsp;|&nbsp; info@heritagetipo.com
+            </p>
+          </div>
         </div>
       </div>
     </section>

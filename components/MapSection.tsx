@@ -133,7 +133,7 @@ export default function MapSection() {
             alt="Decorative motif"
             width={600}
             height={60}
-            className="mx-auto block w-[280px] h-auto"
+            className="mx-auto block h-6 w-auto"
           />
           <div className="text-center mt-[45px]">
             <h2

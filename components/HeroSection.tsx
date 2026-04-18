@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Hero area — pure black to match bottle */}
       <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
         {/* Bottle centered + Discover positioned beside it */}
-        <div className="relative z-10 flex flex-col items-center translate-y-[40px]">
+        <div className="relative z-10 flex flex-col items-center translate-y-[100px]">
           <div
             style={{
               transform: "translateX(20px) scale(1.2)",

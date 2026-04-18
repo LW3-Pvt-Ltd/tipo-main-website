@@ -6,15 +6,16 @@ export default function CellarSection() {
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Two-column: wider image left, text right */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-x-16 gap-y-12 items-start">
-          {/* Left — wider image (3 cols) */}
+          {/* Left — wider image (3 cols), 2400x1800 / 4:3 frame */}
           <div className="md:col-span-3">
-            <Image
-              src="/Tipo-website/images/winery.webp"
-              alt="Traditional winery with worker overseeing the process"
-              width={720}
-              height={500}
-              className="w-full h-auto object-cover rounded-2xl"
-            />
+            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image
+                src="/Tipo-website/images/winery.webp"
+                alt="Traditional winery with worker overseeing the process"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
 
           {/* Right — text (2 cols) */}

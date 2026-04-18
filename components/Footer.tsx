@@ -48,7 +48,7 @@ export default function Footer() {
         {/* Column 1 — Brand */}
         <div className="flex flex-col">
           <p
-            className="text-[14px] leading-[1.5] mb-3"
+            className="text-[12px] leading-[1.6]"
             style={{
               color: "#C8C8C8",
               fontFamily: '"Mainlux", "Inter", sans-serif',

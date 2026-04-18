@@ -25,7 +25,7 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="bg-black pt-16 pb-10 md:pt-20 md:pb-12">
-      <div className="w-full px-6 md:pl-[60px] md:pr-10">
+      <div className="w-full px-6 md:pl-[100px] md:pr-10">
         {/* 4-column layout: fixed widths, centered as a group with equal side margins */}
         <div className="flex flex-wrap justify-center gap-x-20 md:gap-x-24 gap-y-10 mb-14 items-start">
           {/* Brand block */}

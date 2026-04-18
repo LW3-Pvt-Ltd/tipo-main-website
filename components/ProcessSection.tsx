@@ -110,7 +110,7 @@ export default function ProcessSection() {
               <h2
                 className={`text-xl md:text-2xl leading-snug ${
                   row.stacked ? "" : "whitespace-nowrap"
-                } ${row.largeText ? "mb-7" : ""}`}
+                }`}
                 style={{
                   color: "#D4922A",
                   fontFamily: '"Mainlux", "Inter", sans-serif',
@@ -163,10 +163,9 @@ export default function ProcessSection() {
                     key={j}
                     className={
                       row.largeText
-                        ? "text-[14px] leading-[1.8]"
+                        ? "text-[14px] leading-[1.8] text-brand-text"
                         : "text-[12px] leading-[1.85] text-brand-text"
                     }
-                    style={row.largeText ? { color: "#C8C8C8" } : undefined}
                   >
                     {para}
                   </p>

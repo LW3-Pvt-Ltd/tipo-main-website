@@ -25,21 +25,19 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="bg-black pt-16 pb-10 md:pt-20 md:pb-12">
-      <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
-        {/* 4-column layout: equal gaps, full width matching divider */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+      <div className="max-w-5xl mx-auto px-8 md:px-10">
+        {/* 4-column layout: equal gaps, centered within container */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 mb-14 items-start">
           {/* Brand block */}
           <div>
             <Image
-              src="/Tipo-website/images/tipo-logo.webp"
-              alt="TI:PO logo"
-              width={80}
-              height={28}
-              className="h-auto w-[70px] mb-4"
+              src="/Tipo-website/images/footer-logo.webp"
+              alt="TI:PO — Po:ro Apong"
+              width={560}
+              height={260}
+              className="h-auto w-[140px] mt-0 mb-4 block"
+              priority
             />
-            <p className="font-serif text-brand-gold text-sm mb-3">
-              Po:Ro Apong
-            </p>
             <p className="text-[11px] text-brand-text leading-relaxed">
               Handcrafted by Women
             </p>

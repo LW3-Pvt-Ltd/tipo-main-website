@@ -99,7 +99,7 @@ export default function ProcessSection() {
               }`}
             >
               <h2
-                className="text-[22px] md:text-[26px] leading-snug whitespace-nowrap"
+                className="text-xl md:text-2xl leading-snug whitespace-nowrap"
                 style={{
                   color: "#D4922A",
                   fontFamily: '"Mainlux", "Inter", sans-serif',

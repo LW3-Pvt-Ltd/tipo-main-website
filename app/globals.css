@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Mainlux Light — used for the Discover button */
+@font-face {
+  font-family: "Mainlux";
+  src: url("/Tipo-website/fonts/mainlux-light.woff2") format("woff2"),
+       url("/Tipo-website/fonts/mainlux-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-brand-black: #000000;
   --color-brand-darkgray: #111111;

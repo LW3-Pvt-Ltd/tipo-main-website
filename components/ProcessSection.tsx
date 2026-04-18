@@ -4,8 +4,7 @@ interface ProcessRow {
   label: string;
   heading: string;
   highlight?: string;
-  body: string;
-  body2?: string;
+  body: string[];
   image: string;
   imageAlt: string;
   imageW: number;
@@ -17,8 +16,12 @@ const rows: ProcessRow[] = [
   {
     label: "The Brewmaster\u2019s",
     heading: "MAGIC",
-    body: "The gathered botanicals are handed to the women brewmasters. There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster\u2019s accumulated experience.",
-    body2: "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake. This starter does not impose flavor. It invites fermentation \u2014 recruiting native yeasts and microbes specific to this place.",
+    body: [
+      "The gathered botanicals are handed to the women brewmasters.",
+      "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster\u2019s accumulated experience.",
+      "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
+      "This starter does not impose flavor. It invites fermentation \u2014 recruiting native yeasts and microbes specific to this place.",
+    ],
     image: "/Tipo-website/images/brewmaster.webp",
     imageAlt: "Illustration of a brewmaster figure in traditional clothing with botanicals",
     imageW: 440,
@@ -28,8 +31,10 @@ const rows: ProcessRow[] = [
   {
     label: "FIRE, RICE",
     heading: "and the restraint",
-    body: "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
-    body2: "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary. This process resists massive scale by design. It depends on judgment rather than automation, and on time rather than speed.",
+    body: [
+      "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
+      "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary. This process resists massive scale by design. It depends on judgment rather than automation, and on time rather than speed.",
+    ],
     image: "/Tipo-website/images/mandala.webp",
     imageAlt: "Intricate circular mandala illustration of rice and botanicals",
     imageW: 440,
@@ -39,8 +44,10 @@ const rows: ProcessRow[] = [
   {
     label: "Grain Boundary",
     heading: "Fermentation",
-    body: "The gathered botanicals are handed to the women brewmasters. There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster\u2019s accumulated experience.",
-    body2: "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake. This starter does not impose flavor. It invites fermentation \u2014 recruiting native yeasts and microbes specific to this place.",
+    body: [
+      "The gathered botanicals are handed to the women brewmasters. There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster\u2019s accumulated experience.",
+      "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake. This starter does not impose flavor. It invites fermentation \u2014 recruiting native yeasts and microbes specific to this place.",
+    ],
     image: "/Tipo-website/images/fermentation.webp",
     imageAlt: "Oval illustration representing the grain boundary fermentation process",
     imageW: 400,
@@ -51,8 +58,10 @@ const rows: ProcessRow[] = [
     label: "A RARE SOLID-STATE",
     heading: "Fermentation",
     highlight: "Po:ro Apong ferments in solid state, not liquid.",
-    body: "Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
-    body2: "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
+    body: [
+      "Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
+      "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
+    ],
     image: "/Tipo-website/images/solid-state.webp",
     imageAlt: "Folk art figure with floral motifs representing solid-state fermentation",
     imageW: 440,
@@ -62,8 +71,10 @@ const rows: ProcessRow[] = [
   {
     label: "",
     heading: "The Drawing",
-    body: "In the traditional method, when fermentation is complete, the wine is gently drawn from the grain. What emerges reflects the forest, the season, and the decisions made during that cycle.",
-    body2: "Each batch is distinct. Variation is not corrected; it is accepted as truth. This is not an inconsistency. This is nature.",
+    body: [
+      "In the traditional method, when fermentation is complete, the wine is gently drawn from the grain. What emerges reflects the forest, the season, and the decisions made during that cycle.",
+      "Each batch is distinct. Variation is not corrected; it is accepted as truth. This is not an inconsistency. This is nature.",
+    ],
     image: "/Tipo-website/images/drawing.webp",
     imageAlt: "Detailed illustrated scene showing the drawing process",
     imageW: 440,
@@ -87,30 +98,46 @@ export default function ProcessSection() {
                 row.reversed ? "md:order-2" : "md:order-1"
               }`}
             >
-              <div className="flex flex-col gap-2">
+              <h2
+                className="text-[22px] md:text-[26px] leading-snug whitespace-nowrap"
+                style={{
+                  color: "#D4922A",
+                  fontFamily: '"Mainlux", "Inter", sans-serif',
+                }}
+              >
                 {row.label && (
-                  <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
-                    {row.label}
-                  </span>
+                  <span style={{ fontWeight: 300 }}>{row.label} </span>
                 )}
-                <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold">
-                  {row.heading}
-                </h2>
-              </div>
-              <div className="gold-divider mt-1 mb-1" />
+                <span style={{ fontWeight: 700 }}>{row.heading}</span>
+              </h2>
               {row.highlight && (
-                <p className="text-[14px] leading-[1.85] text-brand-gold font-serif italic">
+                <p
+                  className="text-[14px] leading-[1.85]"
+                  style={{
+                    color: "#D4922A",
+                    fontFamily: '"Mainlux", "Inter", sans-serif',
+                    fontWeight: 300,
+                  }}
+                >
                   {row.highlight}
                 </p>
               )}
-              <p className="text-[12px] leading-[1.85] text-brand-text">
-                {row.body}
-              </p>
-              {row.body2 && (
-                <p className="text-[12px] leading-[1.85] text-brand-text">
-                  {row.body2}
-                </p>
-              )}
+              <div
+                className="flex flex-col gap-4"
+                style={{
+                  fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+                  fontWeight: 300,
+                }}
+              >
+                {row.body.map((para, j) => (
+                  <p
+                    key={j}
+                    className="text-[12px] leading-[1.85] text-brand-text"
+                  >
+                    {para}
+                  </p>
+                ))}
+              </div>
             </div>
 
             {/* Illustration */}

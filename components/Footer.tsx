@@ -47,6 +47,11 @@ export default function Footer() {
       <div className="flex flex-wrap justify-between gap-y-10 items-start w-full">
         {/* Column 1 — Brand */}
         <div className="flex flex-col">
+          <img
+            src="/Tipo-website/images/logo.webp"
+            alt="TI:PO Po:Ro Apong logo"
+            className="h-5 w-auto object-contain mb-3 self-start"
+          />
           <p
             className="text-[12px] leading-[1.6]"
             style={{

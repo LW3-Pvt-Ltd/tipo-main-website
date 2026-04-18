@@ -25,9 +25,9 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="bg-black pt-16 pb-10 md:pt-20 md:pb-12">
-      <div className="max-w-5xl mx-auto px-8 md:px-10">
-        {/* 4-column layout: equal gaps, centered within container */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 mb-14 items-start">
+      <div className="max-w-4xl mx-auto px-8 md:px-10">
+        {/* 4-column layout: equal widths & gaps, centered within container */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-10 mb-14 items-start justify-items-start">
           {/* Brand block */}
           <div>
             <Image

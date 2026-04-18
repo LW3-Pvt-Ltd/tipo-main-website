@@ -62,7 +62,7 @@ export default function HeroSection() {
         {/* Text content — positioned over the himalaya image */}
         <div className="relative z-10 pt-[180px] md:pt-[240px] pb-40 md:pb-52">
           <div
-            className="max-w-md px-10 md:px-0 md:pl-[40%] md:pr-10 text-left"
+            className="max-w-md px-10 md:pl-[80px] md:pr-10 text-left"
             style={{
               fontFamily: '"Mainlux", "Inter", sans-serif',
             }}

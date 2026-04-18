@@ -49,14 +49,18 @@ export default function StoryIntro() {
             >
               <p className="text-[12px] leading-[1.85] text-brand-text">
                 Each season begins in the forest at the foothills of the Himalayas.
+              </p>
+              <p className="text-[12px] leading-[1.85] text-brand-text">
                 Women trained in botanical knowledge enter the surrounding landscape
                 to gather what the year allows. They collect with restraint,
                 selecting from more than sixty forest botanicals based on smell,
                 maturity, texture, and memory.
               </p>
               <p className="text-[12px] leading-[1.85] text-brand-text">
-                The forest decides what is available. The collectors decide what
-                should be taken and what should be left behind.
+                The forest decides what is available.
+                <br />
+                The collectors decide what should be taken and what should be left
+                behind.
               </p>
             </div>
           </div>

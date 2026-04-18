@@ -28,7 +28,7 @@ export default function HeroSection() {
           </div>
           <a
             href="#the-craft"
-            className="absolute top-1/2 uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow text-[7px] left-[180px] -translate-y-[calc(50%-0px)] md:text-[14px] md:left-[80px] md:-translate-y-[calc(50%-240px)]"
+            className="absolute top-1/2 uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow text-[7px] left-[180px] -translate-y-[calc(50%+60px)] md:text-[14px] md:left-[80px] md:-translate-y-[calc(50%-180px)]"
           >
             Discover &gt;&gt;
           </a>

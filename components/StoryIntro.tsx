@@ -19,25 +19,44 @@ export default function StoryIntro() {
           {/* Right — Text */}
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
-              <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
+              <span
+                className="text-[20px] uppercase tracking-[0.25em] text-brand-gold"
+                style={{
+                  fontFamily: '"Mainlux", "Inter", sans-serif',
+                  fontWeight: 700,
+                }}
+              >
                 The Forest
               </span>
-              <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold">
+              <h2
+                className="text-xl md:text-2xl leading-snug text-brand-gold"
+                style={{
+                  fontFamily: '"Mainlux", "Inter", sans-serif',
+                  fontWeight: 300,
+                }}
+              >
                 &amp; the Herb collectors
               </h2>
             </div>
-            <div className="gold-divider mt-1 mb-1" />
-            <p className="text-[12px] leading-[1.85] text-brand-text">
-              Each season begins in the forest at the foothills of the Himalayas.
-              Women trained in botanical knowledge enter the surrounding landscape
-              to gather what the year allows. They collect with restraint,
-              selecting from more than sixty forest botanicals based on smell,
-              maturity, texture, and memory.
-            </p>
-            <p className="text-[12px] leading-[1.85] text-brand-text">
-              The forest decides what is available. The collectors decide what
-              should be taken and what should be left behind.
-            </p>
+            <div
+              className="flex flex-col gap-4"
+              style={{
+                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+                fontWeight: 300,
+              }}
+            >
+              <p className="text-[12px] leading-[1.85] text-brand-text">
+                Each season begins in the forest at the foothills of the Himalayas.
+                Women trained in botanical knowledge enter the surrounding landscape
+                to gather what the year allows. They collect with restraint,
+                selecting from more than sixty forest botanicals based on smell,
+                maturity, texture, and memory.
+              </p>
+              <p className="text-[12px] leading-[1.85] text-brand-text">
+                The forest decides what is available. The collectors decide what
+                should be taken and what should be left behind.
+              </p>
+            </div>
           </div>
         </div>
       </div>

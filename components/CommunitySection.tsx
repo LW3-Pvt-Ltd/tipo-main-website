@@ -16,26 +16,51 @@ export default function CommunitySection() {
         </div>
 
         {/* Right — Text (shown first on mobile) */}
-        <div className="flex flex-col gap-4 order-1 md:order-2">
-          <div className="flex flex-col gap-2">
-            <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
+        <div className="flex flex-col gap-4 order-1 md:order-2 max-w-[480px] md:py-20">
+          <h2
+            className="text-xl md:text-2xl leading-snug"
+            style={{
+              color: "#D4922A",
+              fontFamily: '"Mainlux", "Inter", sans-serif',
+            }}
+          >
+            <span
+              style={{
+                display: "block",
+                fontWeight: 700,
+                letterSpacing: "0.18em",
+              }}
+            >
               Value lives
             </span>
-            <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold">
+            <span
+              style={{
+                display: "block",
+                fontWeight: 300,
+                letterSpacing: "0.08em",
+              }}
+            >
               in the system
-            </h2>
+            </span>
+          </h2>
+          <div
+            className="flex flex-col gap-4"
+            style={{
+              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+              fontWeight: 300,
+            }}
+          >
+            <p className="text-[14px] leading-[1.8] text-brand-text">
+              To keep it intact, we spent two years selecting and partnering
+              with two Self Help Groups: Polo SHG (Leimekuri) and Aaradha SHG
+              (Memberchuk), who are now part of the supply chain.
+            </p>
+            <p className="text-[14px] leading-[1.8] text-brand-text">
+              The tradition stays with its rightful owners: the women
+              brewmasters remain in control; we didn&apos;t outsource heritage,
+              we safeguarded it.
+            </p>
           </div>
-          <div className="gold-divider mt-1 mb-1" />
-          <p className="text-[12px] leading-[1.85] text-brand-text">
-            To keep it intact, we spent two years selecting and partnering with
-            two Self Help Groups: Polo SHG (Leimekuri) and Aaradha SHG
-            (Memberchuk), who are now part of the supply chain.
-          </p>
-          <p className="text-[12px] leading-[1.85] text-brand-text">
-            The tradition stays with its rightful owners: the women brewmasters
-            remain in control; we didn&apos;t outsource heritage, we
-            safeguarded it.
-          </p>
         </div>
       </div>
     </section>

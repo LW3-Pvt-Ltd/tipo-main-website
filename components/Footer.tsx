@@ -37,7 +37,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="py-[60px] px-[80px]"
+      className="py-[60px] px-[160px]"
       style={{
         background:
           "linear-gradient(135deg, #2e2e2e 0%, #242424 35%, #171717 70%, #0e0e0e 100%)",

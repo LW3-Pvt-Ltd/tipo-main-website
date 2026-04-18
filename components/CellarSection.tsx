@@ -17,29 +17,62 @@ export default function CellarSection() {
           </div>
 
           {/* Right — text */}
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
-              <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
+          <div className="flex flex-col gap-4 max-w-[480px] md:py-20">
+            <h2
+              className="text-xl md:text-2xl leading-snug"
+              style={{
+                color: "#D4922A",
+                fontFamily: '"Mainlux", "Inter", sans-serif',
+              }}
+            >
+              <span
+                style={{
+                  display: "block",
+                  fontWeight: 700,
+                  letterSpacing: "0.18em",
+                }}
+              >
                 Technology is the valet,
               </span>
-              <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold">
+              <span
+                style={{
+                  display: "block",
+                  fontWeight: 300,
+                  letterSpacing: "0.08em",
+                  color: "#FFFFFF",
+                }}
+              >
                 not the star.
-              </h2>
-            </div>
-            <p className="font-serif text-brand-gold/80 text-sm italic mb-2">
+              </span>
+            </h2>
+            <p
+              className="text-[16px] leading-[1.85]"
+              style={{
+                color: "#D4922A",
+                fontFamily: '"Mainlux", "Inter", sans-serif',
+                fontWeight: 300,
+              }}
+            >
               Tipo did not reinterpret Po:ro Apong.
             </p>
-            <div className="gold-divider mt-1 mb-1" />
-            <p className="text-[12px] leading-[1.85] text-brand-text">
-              Our role is deliberately modest: introduce hygiene, scientific
-              filtration, and clean bottling in modern winery setting so the
-              Po:ro Apong can travel without altering its character.
-            </p>
-            <p className="text-[12px] leading-[1.85] text-brand-text">
-              This quiet preservation is overseen by Ajoy Shaw, DipWSET, our
-              Chief Winemaker, ensuring what reaches you is what was made at the
-              source: the Brahmaputra Valley, kept pristine in glass.
-            </p>
+            <div
+              className="flex flex-col gap-4"
+              style={{
+                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+                fontWeight: 300,
+              }}
+            >
+              <p className="text-[14px] leading-[1.8] text-brand-text">
+                Our role is deliberately modest: introduce hygiene, scientific
+                filtration, and clean bottling in modern winery setting so the
+                Po:ro Apong can travel without altering its character.
+              </p>
+              <p className="text-[14px] leading-[1.8] text-brand-text">
+                This quiet preservation is overseen by Ajoy Shaw, DipWSET, our
+                Chief Winemaker, ensuring what reaches you is what was made at
+                the source: the Brahmaputra Valley, kept pristine in glass.
+              </p>
+            </div>
           </div>
         </div>
       </div>

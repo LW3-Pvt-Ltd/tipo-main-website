@@ -44,7 +44,7 @@ export default function Footer() {
       }}
     >
       {/* 4 columns, evenly spaced horizontally */}
-      <div className="flex flex-wrap justify-between gap-y-10 items-start max-w-6xl mx-auto">
+      <div className="flex flex-wrap justify-between gap-y-10 items-start w-full">
         {/* Column 1 — Brand */}
         <div className="flex flex-col">
           <p

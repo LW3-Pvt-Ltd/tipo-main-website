@@ -108,13 +108,9 @@ export default function ProcessSection() {
               } ${row.largeText ? "md:py-20 max-w-[480px]" : ""}`}
             >
               <h2
-                className={`${
-                  row.largeText
-                    ? "text-[28px] leading-[1.2]"
-                    : "text-xl md:text-2xl leading-snug"
-                } ${row.stacked ? "" : "whitespace-nowrap"} ${
-                  row.largeText ? "mb-7" : ""
-                }`}
+                className={`text-xl md:text-2xl leading-snug ${
+                  row.stacked ? "" : "whitespace-nowrap"
+                } ${row.largeText ? "mb-7" : ""}`}
                 style={{
                   color: "#D4922A",
                   fontFamily: '"Mainlux", "Inter", sans-serif',

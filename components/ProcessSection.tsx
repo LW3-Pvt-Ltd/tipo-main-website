@@ -14,6 +14,8 @@ interface ProcessRow {
   stacked?: boolean;
   /** If true, label is Mainlux Bold and heading is Mainlux Light (inverse of default). */
   boldLabel?: boolean;
+  /** If true, both label and heading are Mainlux Bold. */
+  boldBoth?: boolean;
   /** If true, use the larger 28px heading / 14px #C8C8C8 body scale + wider padding. */
   largeText?: boolean;
 }
@@ -54,14 +56,19 @@ const rows: ProcessRow[] = [
     label: "Grain Boundary",
     heading: "Fermentation",
     body: [
-      "The gathered botanicals are handed to the women brewmasters. There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster\u2019s accumulated experience.",
-      "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake. This starter does not impose flavor. It invites fermentation \u2014 recruiting native yeasts and microbes specific to this place.",
+      "The gathered botanicals are handed to the women brewmasters.",
+      "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster\u2019s accumulated experience.",
+      "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
+      "This starter does not impose flavor. It invites fermentation \u2014 recruiting native yeasts and microbes specific to this place.",
     ],
     image: "/Tipo-website/images/fermentation.webp",
     imageAlt: "Oval illustration representing the grain boundary fermentation process",
     imageW: 400,
     imageH: 480,
     reversed: false,
+    stacked: true,
+    boldBoth: true,
+    largeText: true,
   },
   {
     label: "A RARE SOLID-STATE",
@@ -119,8 +126,9 @@ export default function ProcessSection() {
                 {row.label && (
                   <span
                     style={{
-                      fontWeight: row.boldLabel ? 700 : 300,
-                      letterSpacing: row.boldLabel ? "0.18em" : "0.08em",
+                      fontWeight: row.boldBoth || row.boldLabel ? 700 : 300,
+                      letterSpacing:
+                        row.boldBoth || row.boldLabel ? "0.18em" : "0.08em",
                       textTransform: row.boldLabel ? "uppercase" : undefined,
                       display: row.stacked ? "block" : undefined,
                     }}
@@ -131,8 +139,9 @@ export default function ProcessSection() {
                 )}
                 <span
                   style={{
-                    fontWeight: row.boldLabel ? 300 : 700,
-                    letterSpacing: row.boldLabel ? "0.08em" : "0.18em",
+                    fontWeight: row.boldBoth ? 700 : row.boldLabel ? 300 : 700,
+                    letterSpacing:
+                      row.boldBoth ? "0.18em" : row.boldLabel ? "0.08em" : "0.18em",
                     display: row.stacked ? "block" : undefined,
                   }}
                 >

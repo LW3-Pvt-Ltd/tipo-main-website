@@ -7,7 +7,7 @@ export default function HeritageSection() {
         {/* Two-column */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">
           {/* Left — Text */}
-          <div className="flex flex-col gap-4 max-w-[480px] md:py-20">
+          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 -translate-y-[30px]">
             <h2
               className="text-xl md:text-2xl leading-snug"
               style={{
@@ -29,7 +29,6 @@ export default function HeritageSection() {
                   display: "block",
                   fontWeight: 300,
                   letterSpacing: "0.08em",
-                  color: "#FFFFFF",
                 }}
               >
                 they say!

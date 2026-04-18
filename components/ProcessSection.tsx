@@ -18,6 +18,8 @@ interface ProcessRow {
   boldBoth?: boolean;
   /** Overrides the color of the heading span only (label keeps #D4922A). */
   headingColor?: string;
+  /** Optional pull-quote block rendered after the body; each string is its own line. */
+  pullQuote?: string[];
   /** If true, use the larger 28px heading / 14px #C8C8C8 body scale + wider padding. */
   largeText?: boolean;
 }
@@ -96,13 +98,15 @@ const rows: ProcessRow[] = [
     heading: "The Drawing",
     body: [
       "In the traditional method, when fermentation is complete, the wine is gently drawn from the grain. What emerges reflects the forest, the season, and the decisions made during that cycle.",
-      "Each batch is distinct. Variation is not corrected; it is accepted as truth. This is not an inconsistency. This is nature.",
+      "Each batch is distinct. Variation is not corrected; it is accepted as truth.",
     ],
+    pullQuote: ["This is not an inconsistency.", "This is nature."],
     image: "/Tipo-website/images/drawing.webp",
     imageAlt: "Detailed illustrated scene showing the drawing process",
     imageW: 440,
     imageH: 440,
     reversed: false,
+    largeText: true,
   },
 ];
 
@@ -190,6 +194,23 @@ export default function ProcessSection() {
                   </p>
                 ))}
               </div>
+              {row.pullQuote && (
+                <div
+                  className="flex flex-col gap-1"
+                  style={{
+                    marginTop: "8px",
+                    color: "#D4922A",
+                    fontFamily: '"Mainlux", "Inter", sans-serif',
+                    fontWeight: 700,
+                  }}
+                >
+                  {row.pullQuote.map((line, k) => (
+                    <p key={k} className="text-[16px] leading-[1.4]">
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Illustration */}

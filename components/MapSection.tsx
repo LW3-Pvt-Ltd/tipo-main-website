@@ -137,7 +137,7 @@ export default function MapSection() {
           />
           <div className="text-center mt-[45px]">
             <h2
-              className="text-xl md:text-2xl leading-snug mb-4"
+              className="text-xl md:text-2xl leading-snug mb-[13px]"
               style={{
                 color: "#D4922A",
                 fontFamily: '"Mainlux", "Inter", sans-serif',

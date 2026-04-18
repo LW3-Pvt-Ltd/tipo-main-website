@@ -41,31 +41,36 @@ export default function MapSection() {
               to your world
             </span>
           </h2>
-          <div
-            className="flex flex-col gap-1"
-            style={{
-              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-              fontWeight: 300,
-            }}
-          >
-            <p className="text-[14px] leading-[1.8] text-brand-text">
+          <div className="flex flex-col gap-1">
+            <p
+              className="text-[14px] leading-[1.8] text-brand-text"
+              style={{
+                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+                fontWeight: 300,
+              }}
+            >
               Every culture has a fermentation that is unique to them.
             </p>
-            <p className="text-[14px] leading-[1.8] text-brand-text">
+            <p
+              className="text-[14px] leading-[1.8] text-brand-text"
+              style={{
+                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+                fontWeight: 300,
+              }}
+            >
               Japan has Sak&eacute;, Korea has Soju, Europe has Wine.
             </p>
+            <p
+              className="text-[16px] leading-[1.4]"
+              style={{
+                color: "#C8C8C8",
+                fontFamily: '"Mainlux", "Inter", sans-serif',
+                fontWeight: 700,
+              }}
+            >
+              India has Po:Ro Apong.
+            </p>
           </div>
-          <p
-            className="text-[16px] leading-[1.4]"
-            style={{
-              marginTop: "4px",
-              color: "#D4922A",
-              fontFamily: '"Mainlux", "Inter", sans-serif',
-              fontWeight: 700,
-            }}
-          >
-            India has Po:Ro Apong.
-          </p>
         </div>
 
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}

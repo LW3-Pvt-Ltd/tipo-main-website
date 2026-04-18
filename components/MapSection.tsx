@@ -136,10 +136,25 @@ export default function MapSection() {
             className="mx-auto block w-[280px] h-auto"
           />
           <div className="text-center mt-[45px]">
-            <span className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium block mb-4">
+            <h2
+              className="text-xl md:text-2xl leading-snug mb-4"
+              style={{
+                color: "#D4922A",
+                fontFamily: '"Mainlux", "Inter", sans-serif',
+                fontWeight: 700,
+                letterSpacing: "0.18em",
+              }}
+            >
               Contact &amp; Distribution
-            </span>
-            <p className="text-[12px] leading-[1.85] text-brand-text">
+            </h2>
+            <p
+              className="text-[14px] leading-[1.8]"
+              style={{
+                color: "#C8C8C8",
+                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+                fontWeight: 500,
+              }}
+            >
               +91 88220 92973 &nbsp;|&nbsp; info@heritagetipo.com
             </p>
           </div>

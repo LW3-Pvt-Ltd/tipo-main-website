@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Yantramanav } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,6 +15,13 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700"],
 });
 
+const yantramanav = Yantramanav({
+  subsets: ["latin"],
+  variable: "--font-yantramanav",
+  display: "swap",
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
+
 export const metadata: Metadata = {
   title: "TI:PO — Po:Ro Apong",
   description:
@@ -28,7 +35,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} ${yantramanav.variable}`}>
       <body className="min-h-screen bg-brand-black text-brand-offwhite overflow-x-hidden font-sans">
         {children}
       </body>

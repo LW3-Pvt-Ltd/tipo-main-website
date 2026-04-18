@@ -61,35 +61,56 @@ export default function HeroSection() {
 
         {/* Text content — positioned over the himalaya image */}
         <div className="relative z-10 pt-[180px] md:pt-[240px] pb-40 md:pb-52">
-          <div className="max-w-2xl px-10 md:px-16 lg:px-20 text-left">
+          <div
+            className="max-w-md px-10 md:px-0 md:pl-[40%] md:pr-10 text-left"
+            style={{
+              fontFamily: '"Mainlux", "Inter", sans-serif',
+            }}
+          >
             {/* THE CRAFT label */}
-            <span className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium">
+            <span
+              className="text-[10px] uppercase tracking-[0.25em] text-brand-gold"
+              style={{ fontWeight: 300 }}
+            >
               The Craft
             </span>
 
-            {/* Subtitle */}
-            <p className="font-serif text-brand-offwhite/70 text-sm md:text-base italic mt-4 mb-1">
+            {/* Subtitle — descriptive line: MAINLUX Light */}
+            <p
+              className="text-brand-offwhite/80 text-sm md:text-[15px] italic mt-1 mb-0"
+              style={{ fontWeight: 300 }}
+            >
               Born at the Foothills of the
             </p>
 
-            {/* Main heading */}
-            <h1 className="font-serif text-brand-gold text-2xl md:text-3xl lg:text-4xl tracking-[0.08em] uppercase leading-none mb-6">
+            {/* Main heading — emphasized phrase: MAINLUX Bold */}
+            <h1
+              className="text-brand-gold text-2xl md:text-3xl lg:text-4xl tracking-[0.08em] uppercase leading-tight mb-3"
+              style={{ fontWeight: 700 }}
+            >
               Eastern Himalayas
             </h1>
 
-            {/* Intro paragraphs */}
-            <div className="flex flex-col gap-4 max-w-xl">
-              <p className="text-[12px] leading-[1.9] text-brand-text">
+            {/* Intro paragraphs — body: Yantramanav Light */}
+            <div
+              className="flex flex-col gap-2 max-w-xl"
+              style={{
+                fontFamily:
+                  'var(--font-yantramanav), "Inter", sans-serif',
+                fontWeight: 300,
+              }}
+            >
+              <p className="text-[12px] leading-[1.7] text-brand-text">
                 Po:ro Apong is born where the Eastern Himalayan foothills spill into
                 Assam&apos;s Brahmaputra Valley.
               </p>
-              <p className="text-[12px] leading-[1.9] text-brand-text">
+              <p className="text-[12px] leading-[1.7] text-brand-text">
                 From this landscape emerges a living library of
                 flavour&mdash;60+ forest botanicals, each shaped by soil,
                 climate and time. Herbs are gathered from the mountains; rice rises
                 from the river&apos;s alluvial fields.
               </p>
-              <p className="text-[12px] leading-[1.9] text-brand-text">
+              <p className="text-[12px] leading-[1.7] text-brand-text">
                 Every year the valley resets
                 itself&mdash;flood, monsoon, heat and generous
                 humidity&mdash;creating one of India&apos;s richest biodiversities.

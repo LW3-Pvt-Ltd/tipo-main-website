@@ -8,9 +8,8 @@ export default function HeroSection() {
         {/* Bottle centered + Discover positioned beside it */}
         <div className="relative z-10 flex flex-col items-center translate-y-[100px]">
           <div
+            className="translate-x-[20px] scale-[0.9] md:scale-[1.2] origin-top"
             style={{
-              transform: "translateX(20px) scale(1.2)",
-              transformOrigin: "top center",
               maskImage:
                 "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
               WebkitMaskImage:

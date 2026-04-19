@@ -18,15 +18,10 @@ export default function HeroSection() {
             style={{
               transform: "translateX(20px) scale(1.2)",
               transformOrigin: "top center",
-              maskImage:
-                "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
-              WebkitMaskImage:
-                "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
-              mixBlendMode: "lighten",
             }}
           >
             <Image
-              src="/Tipo-website/images/tipo-bottle-latest.webp"
+              src="/Tipo-website/images/tipo-bottle-transparent.png"
               alt="TI:PO Po:ro Apong rice wine bottle"
               width={900}
               height={2025}

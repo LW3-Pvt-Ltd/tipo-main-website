@@ -74,7 +74,7 @@ export default function MapSection() {
         </div>
 
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
-        <div className="relative mb-16 mt-6 md:-mt-[285px] -translate-y-[175px] md:translate-y-0">
+        <div className="relative mb-16 mt-6 md:-mt-[255px] -translate-y-[145px] md:translate-y-0">
           <Image
             src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
@@ -127,7 +127,7 @@ export default function MapSection() {
         </div>
 
         {/* Motif + Contact & Distribution */}
-        <div className="mt-[820px] md:mt-[820px]">
+        <div className="mt-[850px] md:mt-[820px]">
           <Image
             src="/Tipo-website/images/motif-latest.webp"
             alt="Decorative motif"

@@ -6,11 +6,10 @@ export default function HeroSection() {
       {/* Hero area — pure black to match bottle */}
       <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
         {/* Bottle centered + Discover positioned beside it */}
-        <div className="relative z-10 flex flex-col items-center translate-y-[100px]">
+        <div className="relative z-10 flex flex-col items-center translate-y-[60px] md:translate-y-[100px]">
           <div
+            className="translate-x-[20px] scale-[0.9] md:scale-[1.2] origin-top"
             style={{
-              transform: "translateX(20px) scale(1.2)",
-              transformOrigin: "top center",
               maskImage:
                 "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
               WebkitMaskImage:
@@ -41,7 +40,7 @@ export default function HeroSection() {
       </div>
 
       {/* Himalaya background with built-in shape divider cutout */}
-      <div className="w-full relative z-20 -mt-[60px]" style={{ minHeight: "61vw" }}>
+      <div className="w-full relative z-20 -mt-[140px] md:-mt-[60px]" style={{ minHeight: "61vw" }}>
         {/* Himalaya new image — black cutout at top blends seamlessly with hero.
             Height capped at 90% of the wrapper so the image is vertically
             cropped from the bottom (top anchor preserved for bottle blend). */}
@@ -64,7 +63,7 @@ export default function HeroSection() {
         {/* Text content — positioned over the himalaya image.
             pl values match Discover's left offsets so text shares the
             same vertical axis (x=180 mobile, x=80 desktop). */}
-        <div className="relative z-10 pt-[180px] md:pt-[240px] pb-40 md:pb-52">
+        <div className="relative z-10 pt-[40px] md:pt-[240px] pb-40 md:pb-52">
           <div
             className="pl-[440px] md:pl-[340px] pr-6 md:pr-10 max-w-[680px] md:max-w-[740px] text-left"
             style={{

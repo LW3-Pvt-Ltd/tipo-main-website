@@ -3,30 +3,18 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="relative w-full flex flex-col items-center overflow-hidden">
-      {/* Hero area — solid #0E0E10 base matches bottle image's baked-in black */}
-      <div
-        className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden"
-        style={{ background: "#0E0E10", isolation: "isolate" }}
-      >
-        {/* Teal/blue atmospheric glow — behind everything */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            zIndex: 0,
-            background:
-              "radial-gradient(ellipse 70% 40% at 50% 45%, rgba(11, 44, 63, 0.4) 0%, rgba(11, 44, 63, 0.2) 25%, rgba(14, 14, 16, 0) 60%)",
-          }}
-        />
-
-        {/* Bottle — untouched image (no blend, no mask, no opacity) */}
-        <div
-          className="relative flex flex-col items-center translate-y-[100px]"
-          style={{ zIndex: 1 }}
-        >
+      {/* Hero area — pure black to match bottle */}
+      <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
+        {/* Bottle centered + Discover positioned beside it */}
+        <div className="relative z-10 flex flex-col items-center translate-y-[100px]">
           <div
             style={{
               transform: "translateX(20px) scale(1.2)",
               transformOrigin: "top center",
+              maskImage:
+                "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
+              WebkitMaskImage:
+                "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
             }}
           >
             <Image
@@ -38,60 +26,17 @@ export default function HeroSection() {
               priority
             />
           </div>
-        </div>
-
-        {/* Edge-blending overlay — 4 linear gradients fade from all edges inward.
-            Covers the bottle PNG's baked-in rectangular black edges. */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            zIndex: 2,
-            background: [
-              "linear-gradient(to right, #0E0E10 0%, #0E0E10 10%, rgba(14,14,16,0.85) 20%, transparent 35%)",
-              "linear-gradient(to left, #0E0E10 0%, #0E0E10 10%, rgba(14,14,16,0.85) 20%, transparent 35%)",
-              "linear-gradient(to top, #0E0E10 0%, #0E0E10 5%, rgba(14,14,16,0.9) 12%, transparent 25%)",
-              "linear-gradient(to bottom, #0E0E10 0%, rgba(14,14,16,0.7) 8%, transparent 20%)",
-            ].join(", "),
-          }}
-        />
-
-        {/* Discover — sibling of edge overlay at z-3 so it sits above the fade.
-            Inner wrapper mirrors the bottle wrapper's flex layout + transforms,
-            containing a visibility:hidden bottle placeholder, so the `left-[180px]`
-            offset lands at the exact same x-position as the real Discover used to. */}
-        <div
-          className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none"
-          style={{ zIndex: 3 }}
-        >
-          <div className="relative flex flex-col items-center translate-y-[100px]">
-            <div
-              style={{
-                transform: "translateX(20px) scale(1.2)",
-                transformOrigin: "top center",
-                visibility: "hidden",
-              }}
-              aria-hidden="true"
-            >
-              <Image
-                src="/Tipo-website/images/tipo-bottle-latest.webp"
-                alt=""
-                width={900}
-                height={2025}
-                className="object-contain max-h-[96vh]"
-              />
-            </div>
-            <a
-              href="#the-craft"
-              className="pointer-events-auto absolute top-1/2 uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow left-[180px] -translate-y-[calc(50%_+_60px)] md:left-[80px] md:-translate-y-[calc(50%-180px)]"
-              style={{
-                fontFamily: '"Mainlux Light", "Mainlux", "Inter", sans-serif',
-                fontWeight: 300,
-                fontSize: "10pt",
-              }}
-            >
-              Discover &gt;&gt;
-            </a>
-          </div>
+          <a
+            href="#the-craft"
+            className="absolute top-1/2 uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow left-[180px] -translate-y-[calc(50%_+_60px)] md:left-[80px] md:-translate-y-[calc(50%-180px)]"
+            style={{
+              fontFamily: '"Mainlux Light", "Mainlux", "Inter", sans-serif',
+              fontWeight: 300,
+              fontSize: "10pt",
+            }}
+          >
+            Discover &gt;&gt;
+          </a>
         </div>
       </div>
 

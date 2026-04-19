@@ -3,8 +3,15 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="relative w-full flex flex-col items-center overflow-hidden">
-      {/* Hero area — pure black to match bottle */}
-      <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
+      {/* Hero area — layered background: near-black base + radial teal-blue glow */}
+      <div
+        className="relative w-full h-screen flex flex-col items-center justify-center"
+        style={{
+          background: "#0E0E10",
+          backgroundImage:
+            "radial-gradient(ellipse 80% 50% at 50% 75%, rgba(11, 44, 63, 0.6) 0%, rgba(11, 44, 63, 0.3) 30%, rgba(14, 14, 16, 0) 70%), linear-gradient(to right, #0E0E0F 0%, #0E0E10 50%, #141217 100%)",
+        }}
+      >
         {/* Bottle centered + Discover positioned beside it */}
         <div className="relative z-10 flex flex-col items-center translate-y-[100px]">
           <div

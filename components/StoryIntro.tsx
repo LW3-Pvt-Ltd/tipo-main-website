@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function StoryIntro() {
   return (
-    <section id="the-craft" className="bg-brand-black py-20 md:py-4">
+    <section id="" className="bg-brand-black py-20 md:py-4">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Two-column: Image + Text */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">

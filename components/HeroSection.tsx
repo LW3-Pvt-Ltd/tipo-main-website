@@ -40,7 +40,7 @@ export default function HeroSection() {
       </div>
 
       {/* Himalaya background with built-in shape divider cutout */}
-      <div className="w-full relative z-20 -mt-[60px]" style={{ minHeight: "61vw" }}>
+      <div id="the-craft" className="w-full relative z-20 -mt-[60px]" style={{ minHeight: "61vw" }}>
         {/* Himalaya new image — black cutout at top blends seamlessly with hero.
             Height capped at 90% of the wrapper so the image is vertically
             cropped from the bottom (top anchor preserved for bottle blend). */}

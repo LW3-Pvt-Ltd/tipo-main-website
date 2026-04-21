@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MapSection() {
   return (
-    <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden">
+    <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden -mt-[100px]">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Welcome heading + culture quote */}
         <div className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20 -translate-y-[45px]">
@@ -88,7 +88,7 @@ export default function MapSection() {
             className="hidden md:block absolute"
             style={{
               right: "-226px",
-              bottom: "-780px",
+              bottom: "-600px",
               transform: "rotate(0deg)",
               maskImage:
                 "radial-gradient(ellipse 70% 70% at 60% 55%, black 40%, transparent 100%)",
@@ -127,7 +127,7 @@ export default function MapSection() {
         </div>
 
         {/* Motif + Contact & Distribution */}
-        <div className="mt-[850px] md:mt-[820px]">
+        <div className="mt-[670px] md:mt-[640px]">
           <Image
             src="/Tipo-website/images/motif-latest.webp"
             alt="Decorative motif"

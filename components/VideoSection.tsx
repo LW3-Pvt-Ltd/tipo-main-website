@@ -1,9 +1,9 @@
 export default function VideoSection() {
   return (
-    <section className="py-20 md:py-[207px]" style={{ backgroundColor: "#D9D9D9" }}>
+    <section className="py-20 md:py-[96px] -mt-[120px]" style={{ backgroundColor: "#1F2122" }}>
       <div className="mx-auto px-6 md:px-10 lg:px-14 flex flex-col items-center gap-8">
         {/* Label */}
-        <div className="w-full max-w-[1013px]" style={{ marginTop: "-20px" }}>
+        <div className="w-full max-w-[1138px]" style={{ marginTop: "-20px" }}>
           <span
             className="text-[14px] uppercase tracking-[0.25em]"
             style={{
@@ -17,7 +17,7 @@ export default function VideoSection() {
         </div>
 
         {/* YouTube Video */}
-        <div className="w-full max-w-[1013px]">
+        <div className="w-full max-w-[1139px]">
           <div className="relative w-full overflow-hidden rounded-[15px]" style={{ paddingBottom: "56.25%" }}>
             <iframe
               src="https://www.youtube.com/embed/QipHkYuCm74"

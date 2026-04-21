@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CommunitySection() {
   return (
-    <section className="bg-brand-black py-20 md:py-28">
+    <section className="bg-brand-black py-20 md:py-28 -mt-[180px]">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">
         {/* Left — Image (shown after text on mobile) */}
         <div className="order-2 md:order-1">
@@ -50,12 +50,12 @@ export default function CommunitySection() {
               fontWeight: 300,
             }}
           >
-            <p className="text-[14px] leading-[1.8] text-brand-text">
+            <p className="text-[16px] leading-[1.8] text-brand-text">
               To keep it intact, we spent two years selecting and partnering
               with two Self Help Groups: Polo SHG (Leimekuri) and Aaradha SHG
               (Memberchuk), who are now part of the supply chain.
             </p>
-            <p className="text-[14px] leading-[1.8] text-brand-text">
+            <p className="text-[16px] leading-[1.8] text-brand-text">
               The tradition stays with its rightful owners: the women
               brewmasters remain in control; we didn&apos;t outsource heritage,
               we safeguarded it.

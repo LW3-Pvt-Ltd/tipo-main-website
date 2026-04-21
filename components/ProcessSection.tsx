@@ -22,6 +22,7 @@ interface ProcessRow {
   pullQuote?: string[];
   /** If true, use the larger 28px heading / 14px #C8C8C8 body scale + wider padding. */
   largeText?: boolean;
+  bodySize?: string;
 }
 
 const rows: ProcessRow[] = [
@@ -36,9 +37,10 @@ const rows: ProcessRow[] = [
     ],
     image: "/Tipo-website/images/brewmaster.webp",
     imageAlt: "Illustration of a brewmaster figure in traditional clothing with botanicals",
-    imageW: 440,
-    imageH: 440,
+    imageW: 520,
+    imageH: 520,
     reversed: false,
+    bodySize: "16px",
   },
   {
     label: "FIRE, RICE",
@@ -49,12 +51,13 @@ const rows: ProcessRow[] = [
     ],
     image: "/Tipo-website/images/mandala.webp",
     imageAlt: "Intricate circular mandala illustration of rice and botanicals",
-    imageW: 440,
-    imageH: 440,
+    imageW: 578,
+    imageH: 578,
     reversed: true,
     stacked: true,
     boldLabel: true,
     largeText: true,
+    bodySize: "16px",
   },
   {
     label: "Grain Boundary",
@@ -65,14 +68,15 @@ const rows: ProcessRow[] = [
       "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
       "This starter does not impose flavor. It invites fermentation \u2014 recruiting native yeasts and microbes specific to this place.",
     ],
-    image: "/Tipo-website/images/fermentation.webp",
+    image: "/Tipo-website/images/new-grain-boundary.webp",
     imageAlt: "Oval illustration representing the grain boundary fermentation process",
-    imageW: 400,
-    imageH: 480,
+    imageW: 720,
+    imageH: 720,
     reversed: false,
     stacked: true,
     boldBoth: true,
     largeText: true,
+    bodySize: "16px",
   },
   {
     label: "A RARE SOLID-STATE",
@@ -92,6 +96,7 @@ const rows: ProcessRow[] = [
     stacked: true,
     boldLabel: true,
     largeText: true,
+    bodySize: "16px",
   },
   {
     label: "",
@@ -103,27 +108,32 @@ const rows: ProcessRow[] = [
     pullQuote: ["This is not an inconsistency.", "This is nature."],
     image: "/Tipo-website/images/drawing.webp",
     imageAlt: "Detailed illustrated scene showing the drawing process",
-    imageW: 440,
-    imageH: 440,
+    imageW: 520,
+    imageH: 520,
     reversed: false,
     largeText: true,
+    bodySize: "16px",
   },
 ];
 
 export default function ProcessSection() {
   return (
-    <section className="bg-brand-black py-12 md:py-20">
+    <section className="bg-brand-black py-12 md:py-10">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20 flex flex-col gap-20 md:gap-28">
         {rows.map((row, i) => (
           <div
             key={i}
-            className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-center"
-          >
+            className={`grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 items-center ${
+  i === 1 ? "-mt-10 md:-mt-10" : i === 2 ? "-mt-10 md:-mt-10" : ""
+}`}
+>
             {/* Text */}
             <div
               className={`flex flex-col gap-4 ${
                 row.reversed ? "md:order-2" : "md:order-1"
-              } ${row.largeText ? "md:py-20 max-w-[480px]" : ""}`}
+              } ${row.largeText ? "md:py-5 max-w-[480px]" : ""}${
+    i === 0 ? "mt-[25px]" : ""
+  }`}
             >
               <h2
                 className={`text-xl md:text-2xl leading-snug ${
@@ -184,11 +194,11 @@ export default function ProcessSection() {
                 {row.body.map((para, j) => (
                   <p
                     key={j}
-                    className={
-                      row.largeText
-                        ? "text-[14px] leading-[1.8] text-brand-text"
-                        : "text-[12px] leading-[1.85] text-brand-text"
-                    }
+                    className="text-brand-text"
+style={{
+  fontSize: row.bodySize || "14px",
+  lineHeight: row.bodySize ? "1.9" : "1.85",
+}}
                   >
                     {para}
                   </p>
@@ -223,7 +233,17 @@ export default function ProcessSection() {
                 alt={row.imageAlt}
                 width={row.imageW}
                 height={row.imageH}
-                className="w-full max-w-[440px] h-auto object-contain"
+                className={`w-full h-auto object-contain ${
+  i === 0
+    ? "max-w-[520px]"
+    : i === 1
+    ? "max-w-[528px]"
+    : i === 2
+    ? "max-w-[580px]" // 👈 increase size here
+    : i === 4
+    ? "max-w-[528px]"
+    : "max-w-[440px]"
+}`}
               />
             </div>
           </div>

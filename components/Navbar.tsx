@@ -41,10 +41,7 @@ function scrollToParallax(e: React.MouseEvent) {
 }
 
 function scrollToSection(id: string) {
-  const target = document.getElementById(id);
-  if (!target) return;
-  const top = target.getBoundingClientRect().top + window.scrollY - 80;
-  window.scrollTo({ top, behavior: "smooth" });
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 export default function Navbar() {

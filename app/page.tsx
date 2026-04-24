@@ -9,6 +9,7 @@ import CommunitySection from "@/components/CommunitySection";
 import MapSection from "@/components/MapSection";
 import Footer from "@/components/Footer";
 import MobileSite from "@/components/mobile/MobileSite";
+import CursorEffects from "@/components/CursorEffects";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
       <MobileSite />
 
       {/* Desktop layout — hidden on mobile */}
-      <div className="hidden md:block">
+      <CursorEffects />
+      <div id="desktop-site" className="hidden md:block">
         <Navbar />
         <main>
           <HeroSection />

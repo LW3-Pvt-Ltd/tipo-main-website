@@ -3,8 +3,8 @@
 /* Mainlux Light — used for small tracked labels, Discover button, nav */
 @font-face {
   font-family: "Mainlux";
-  src: url("/Tipo-website/fonts/mainlux-light.woff2") format("woff2"),
-       url("/Tipo-website/fonts/mainlux-light.woff") format("woff");
+  src: url("/tipo-main-website/fonts/mainlux-light.woff2") format("woff2"),
+       url("/tipo-main-website/fonts/mainlux-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
 /* Mainlux Bold — used for hero emphasis ("EASTERN HIMALAYAS", etc.) */
 @font-face {
   font-family: "Mainlux";
-  src: url("/Tipo-website/fonts/mainlux-bold.ttf") format("truetype");
+  src: url("/tipo-main-website/fonts/mainlux-bold.ttf") format("truetype");
   font-weight: 700 900;
   font-style: normal;
   font-display: swap;

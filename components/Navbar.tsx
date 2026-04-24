@@ -41,7 +41,8 @@ function scrollToParallax(e: React.MouseEvent) {
 }
 
 function scrollToSection(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const root = document.getElementById("desktop-site");
+  root?.querySelector<HTMLElement>(`#${id}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 export default function Navbar() {

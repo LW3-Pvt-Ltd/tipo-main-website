@@ -83,7 +83,7 @@ export default function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
-                onClick={link.label === "The Craft" ? scrollToParallax : (e) => { e.preventDefault(); document.getElementById(link.label === "The Women" ? "heritage" : "contact")?.scrollIntoView(); }}
+                onClick={link.label === "The Craft" ? scrollToParallax : undefined}
                 className="tx-serif-light text-[11px] uppercase tracking-[0.14em] text-[#D4922A] transition-all duration-300 border-b border-transparent hover:border-brand-gold pb-0.5"
               >
                 {link.label}

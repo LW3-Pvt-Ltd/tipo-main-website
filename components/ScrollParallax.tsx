@@ -9,12 +9,18 @@ export default function ScrollParallax() {
 
     const update = () => {
       if (window.innerWidth < 768) return;
-      const els = document.querySelectorAll<HTMLElement>("[data-parallax-text]");
       const vh = window.innerHeight;
-      els.forEach((el) => {
+
+      // Remove text parallax — reset any previously applied transforms
+      document.querySelectorAll<HTMLElement>("[data-parallax-text]").forEach((el) => {
+        el.style.transform = "";
+      });
+
+      // Image parallax — subtle downward lag for depth feel
+      document.querySelectorAll<HTMLElement>("[data-parallax-img]").forEach((el) => {
         const rect = el.getBoundingClientRect();
         const center = rect.top + rect.height / 2 - vh / 2;
-        el.style.transform = `translateY(${center * 0.05}px)`;
+        el.style.transform = `translateY(${center * 0.48}px)`;
       });
     };
 
@@ -25,7 +31,7 @@ export default function ScrollParallax() {
 
     const onResize = () => {
       if (window.innerWidth < 768) {
-        document.querySelectorAll<HTMLElement>("[data-parallax-text]").forEach(
+        document.querySelectorAll<HTMLElement>("[data-parallax-img]").forEach(
           (el) => { el.style.transform = ""; }
         );
       } else {

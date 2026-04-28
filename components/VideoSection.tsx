@@ -1,6 +1,6 @@
 export default function VideoSection() {
   return (
-    <section className="py-20 md:py-[96px] mt-0 md:mt-[40px]" style={{ backgroundColor: "#000000" }}>
+    <section className="py-[clamp(86px,6vw,120px)]" style={{ backgroundColor: "#000000" }}>
       <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-4 sm:px-6 md:px-[clamp(40px,2.8vw,80px)] flex flex-col items-center gap-8">
         {/* Label */}
         <div className="w-full max-w-[clamp(1138px,79vw,1600px)]" style={{ marginTop: "-20px" }}>

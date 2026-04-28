@@ -27,7 +27,7 @@ export default function MobileSite() {
               "Women trained in botanical knowledge enter the surrounding landscape to gather what the year allows. They collect with restraint, selecting from more than sixty forest botanicals based on smell, maturity, texture, and memory.",
               "The forest decides what is available. The collectors decide what should be taken and what should be left behind.",
             ]}
-            image="/tipo-main-website/images/herb-collector.webp"
+            image="/tipo-main-website/images/latest new herb-collector .webp"
             imageAlt="Women herb collectors gathering botanicals in the Himalayan foothills"
           />
         </div>
@@ -42,7 +42,7 @@ export default function MobileSite() {
             "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster's accumulated experience.",
             "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
           ]}
-          image="/tipo-main-website/images/brewmaster.webp"
+          image="/tipo-main-website/images/latest brewmaster 1.webp"
           imageAlt="Illustration of a brewmaster figure in traditional clothing with botanicals"
         />
 
@@ -55,7 +55,7 @@ export default function MobileSite() {
             "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
             "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
           ]}
-          image="/tipo-main-website/images/mandala.webp"
+          image="/tipo-main-website/images/latest mandala 1.webp"
           imageAlt="Intricate circular mandala illustration of rice and botanicals"
         />
 
@@ -70,7 +70,7 @@ export default function MobileSite() {
             "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
             "This starter does not impose flavor. It invites fermentation — recruiting native yeasts and microbes specific to this place.",
           ]}
-          image="/tipo-main-website/images/new-grain-boundary.webp"
+          image="/tipo-main-website/images/latest new-grain-boundary 1.webp"
           imageAlt="Oval illustration representing the grain boundary fermentation process"
         />
 
@@ -82,7 +82,7 @@ export default function MobileSite() {
             "This process resists massive scale by design.",
             "It depends on judgment rather than automation, and on time rather than speed.",
           ]}
-          image="/tipo-main-website/images/solid-state.webp"
+          image="/tipo-main-website/images/latest solid-state 1.webp"
           imageAlt="Folk art figure with floral motifs representing solid-state fermentation"
         />
 
@@ -96,7 +96,7 @@ export default function MobileSite() {
             "Each batch is distinct. Variation is not corrected; it is accepted as truth.",
           ]}
           pullQuote={["This is not an inconsistency.", "This is nature."]}
-          image="/tipo-main-website/images/drawing.webp"
+          image="/tipo-main-website/images/latest drawing 1.webp"
           imageAlt="Detailed illustrated scene showing the drawing process"
         />
 
@@ -109,7 +109,7 @@ export default function MobileSite() {
             "Our role is deliberately modest: introduce hygiene, scientific filtration, and clean bottling in modern winery setting so the Po:ro Apong can travel without altering its character.",
             "This quiet preservation is overseen by Ajoy Shaw, DipWSET, our Chief Winemaker, ensuring what reaches you is what was made at the source.",
           ]}
-          image="/tipo-main-website/images/winery.webp"
+          image="/tipo-main-website/images/latest new winery .webp"
           imageAlt="Traditional winery with worker overseeing the process"
         />
 

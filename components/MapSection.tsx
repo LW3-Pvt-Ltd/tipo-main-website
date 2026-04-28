@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MapSection() {
   return (
-    <section className="bg-brand-black py-20 md:py-28 relative mt-0 md:-mt-[100px] no-magnify">
+    <section className="bg-brand-black pt-20 md:pt-28 pb-4 md:pb-[clamp(60px,4.2vw,100px)] relative mt-0 md:-mt-[100px] no-magnify">
       <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
         {/* Welcome heading + culture quote */}
         <div data-parallax-text className="max-w-[clamp(600px,41.7vw,900px)] mx-auto text-center flex flex-col gap-4 md:py-20">
@@ -36,7 +36,7 @@ export default function MapSection() {
 
           {/* Bottle overlay — desktop: right edge flush with viewport */}
           <div
-            className="hidden md:block absolute -bottom-[600px] xl:-bottom-[800px] 2xl:-bottom-[500px]"
+            className="hidden md:block absolute -bottom-[540px] xl:-bottom-[740px] 2xl:-bottom-[440px]"
             style={{
               right: "calc(-1 * ((100vw - clamp(1152px, 75vw, 1800px)) / 2 + clamp(64px, 5.5vw, 120px)))",
               maskImage:
@@ -76,7 +76,7 @@ export default function MapSection() {
         </div>
 
         {/* Motif + Contact & Distribution */}
-        <div id="contact" className="mt-8 md:mt-[560px] xl:mt-[720px] 2xl:mt-[300px]">
+        <div id="contact" className="mt-8 md:mt-[460px] xl:mt-[620px] 2xl:mt-[210px]">
           <Image
             src="/tipo-main-website/images/motif-latest.webp"
             alt="Decorative motif"
@@ -95,7 +95,15 @@ export default function MapSection() {
               Contact &amp; Distribution
             </h2>
             <p className="tx-body-medium text-[clamp(14px,0.97vw,20px)] leading-[1.4] md:leading-[1.8] text-[#C8C8C8]">
-              +91 88220 92973 &nbsp;|&nbsp; info@heritagetipo.com
+              +91 88220 92973 &nbsp;|&nbsp;{" "}
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors duration-300 underline-offset-2 hover:underline"
+              >
+                info@heritagetipo.com
+              </a>
             </p>
           </div>
         </div>

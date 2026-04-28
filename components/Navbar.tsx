@@ -65,7 +65,7 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between px-6 md:px-16 lg:px-20 py-5">
         {/* Logo */}
-        <a href="#" className="block">
+        <a href="#" className="block no-magnify">
           <Image
             src="/tipo-main-website/images/logo.webp"
             alt="TI:PO Po:Ro Apong logo"

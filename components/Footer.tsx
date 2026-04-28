@@ -15,13 +15,13 @@ export default function Footer() {
   ];
 
   const connectLinks = [
-    { label: "Instagram", href: "#" },
-    { label: "YouTube", href: "#" },
+    { label: "Instagram", href: "https://www.instagram.com/tipo.heritage", target: "_blank" },
+    { label: "YouTube", href: "https://www.youtube.com/@TipoHeritage", target: "_blank" },
     { label: "Contact", href: "#contact" },
     { label: "Press Kit", href: "#" },
   ];
 
-  const columns: { title: string; links: { label: string; href: string }[] }[] = [
+  const columns: { title: string; links: { label: string; href: string; target?: string }[] }[] = [
     { title: "Explore", links: exploreLinks },
     { title: "Experience", links: experienceLinks },
     { title: "Connect", links: connectLinks },
@@ -78,13 +78,21 @@ export default function Footer() {
               }
             >
               {links.map((link) => (
-                <li key={link.label}>
+                <li key={link.label} className="relative group">
                   <a
                     href={link.href}
+                    target={link.target}
+                    rel={link.target === "_blank" ? "noopener noreferrer" : undefined}
                     className="tx-body text-[clamp(14px,0.97vw,20px)] leading-[2] text-[#C8C8C8] hover:text-white transition-colors duration-300 border-b border-transparent md:hover:border-brand-gold pb-0.5"
                   >
                     {link.label}
                   </a>
+                  {title === "Experience" && (
+                    <span className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-4 py-2 text-[11px] uppercase tracking-[0.15em] text-brand-gold bg-[#111] border border-brand-gold/50 rounded-md whitespace-nowrap shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                      Coming Soon
+                      <span className="absolute left-1/2 -translate-x-1/2 top-full border-4 border-transparent border-t-brand-gold/50" />
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>

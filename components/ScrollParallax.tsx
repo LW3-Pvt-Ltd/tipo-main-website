@@ -16,11 +16,11 @@ export default function ScrollParallax() {
         el.style.transform = "";
       });
 
-      // Image parallax — subtle downward lag for depth feel
+      // Image parallax — move the element itself (inner wrapper for fill images, container for others)
       document.querySelectorAll<HTMLElement>("[data-parallax-img]").forEach((el) => {
         const rect = el.getBoundingClientRect();
         const center = rect.top + rect.height / 2 - vh / 2;
-        el.style.transform = `translateY(${center * 0.48}px)`;
+        el.style.transform = `translateY(${center * 0.15}px)`;
       });
     };
 
@@ -31,9 +31,9 @@ export default function ScrollParallax() {
 
     const onResize = () => {
       if (window.innerWidth < 768) {
-        document.querySelectorAll<HTMLElement>("[data-parallax-img]").forEach(
-          (el) => { el.style.transform = ""; }
-        );
+        document.querySelectorAll<HTMLElement>("[data-parallax-img]").forEach((el) => {
+          el.style.transform = "";
+        });
       } else {
         update();
       }

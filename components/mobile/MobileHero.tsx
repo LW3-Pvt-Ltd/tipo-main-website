@@ -27,6 +27,8 @@ export default function MobileHero() {
 
   // Parallax + scroll lock + re-lock on return to top
   useEffect(() => {
+    if (window.innerWidth >= 768) return;
+
     const preventTouch = (e: TouchEvent) => {
       if (lockedRef.current) e.preventDefault();
     };

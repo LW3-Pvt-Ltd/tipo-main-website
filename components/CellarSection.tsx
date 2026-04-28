@@ -7,13 +7,15 @@ export default function CellarSection() {
         {/* Two-column 50/50: matches StoryIntro so the image renders identically sized */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-[clamp(40px,3vw,80px)] gap-y-12 items-start md:items-center">
           {/* Left — image (2400x1800 / 4:3 frame) */}
-          <div data-parallax-img className="relative w-full aspect-square rounded-2xl overflow-hidden">
-            <Image
-              src="/tipo-main-website/images/latest new winery .webp"
-              alt="Traditional winery with worker overseeing the process"
-              fill
-              className="object-cover"
-            />
+          <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
+            <div data-parallax-img className="absolute" style={{ inset: "-15%" }}>
+              <Image
+                src="/tipo-main-website/images/latest new winery .webp"
+                alt="Traditional winery with worker overseeing the process"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
 
           {/* Right — text */}

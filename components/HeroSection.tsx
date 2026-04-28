@@ -162,17 +162,17 @@ export default function HeroSection() {
 
             {/* Intro paragraphs */}
             <div className="tx-body flex flex-col gap-4 md:gap-2 max-w-[420px]">
-              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.5] text-brand-text">
+              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.25] text-brand-text">
                 Po:ro Apong is born where the Eastern Himalayan foothills spill into
                 Assam&apos;s Brahmaputra Valley.
               </p>
-              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.5] text-brand-text">
+              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.25] text-brand-text">
                 From this landscape emerges a living library of
                 flavour&mdash;60+ forest botanicals, each shaped by soil,
                 climate and time. Herbs are gathered from the mountains; rice rises
                 from the river&apos;s alluvial fields.
               </p>
-              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.5] text-brand-text">
+              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.25] text-brand-text">
                 Every year the valley resets
                 itself&mdash;flood, monsoon, heat and generous
                 humidity&mdash;creating one of India&apos;s richest biodiversities.

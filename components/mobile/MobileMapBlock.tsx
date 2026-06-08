@@ -29,15 +29,15 @@ export default function MobileMapBlock() {
       </div>
 
       <Image
-        src="/images/New Assam Map.svg"
+        src="/images/Assam map updated.svg"
         alt="Brahmaputra Valley origin"
         width={1200}
         height={600}
-        className="w-full h-auto object-contain block"
-        style={{ marginTop: -60 }}
+        className="w-[85%] mx-auto h-auto object-contain block"
+        style={{ marginTop: 16 }}
       />
 
-      <div style={{ marginTop: -80 }}>
+      <div style={{ marginTop: -72 }}>
       <div
         className="flex justify-end mt-6"
         style={{

@@ -25,13 +25,13 @@ export default function MapSection() {
         </div>
 
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
-        <div className="relative md:mb-16 mt-6 -mt-8 md:-mt-10">
+        <div className="relative md:mb-16 mt-12 md:-mt-10">
           <Image
-            src="/images/New Assam Map.svg"
+            src="/images/Assam map updated.svg"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
             width={1200}
             height={600}
-            className="w-full max-w-[clamp(994px,69vw,1610px)] mx-auto h-auto object-contain relative z-10 force-magnify"
+            className="w-full max-w-[clamp(845px,58.65vw,1369px)] mx-auto h-auto object-contain relative z-10 force-magnify"
           />
 
           {/* Bottle overlay — desktop: right edge flush with viewport */}

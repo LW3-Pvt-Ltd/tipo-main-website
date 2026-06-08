@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/tipo-main-website",
+  basePath: "/",// #tipo-main-website
   generateBuildId: () => Date.now().toString(),
   headers: async () => [
     {

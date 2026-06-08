@@ -29,7 +29,7 @@ export default function MobileMapBlock() {
       </div>
 
       <Image
-        src="/tipo-main-website/images/New Assam Map.svg"
+        src="/images/New Assam Map.svg"
         alt="Brahmaputra Valley origin"
         width={1200}
         height={600}
@@ -49,7 +49,7 @@ export default function MobileMapBlock() {
         }}
       >
         <Image
-          src="/tipo-main-website/images/bottle.jpeg"
+          src="/images/bottle.jpeg"
           alt="TI:PO bottle"
           width={375}
           height={900}
@@ -60,7 +60,7 @@ export default function MobileMapBlock() {
 
       <div style={{ marginTop: -40 }}>
       <Image
-        src="/tipo-main-website/images/motif-latest.webp"
+        src="/images/motif-latest.webp"
         alt=""
         aria-hidden
         width={600}

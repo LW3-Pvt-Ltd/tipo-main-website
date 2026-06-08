@@ -2,7 +2,7 @@ export default function Footer() {
   const exploreLinks = [
     { label: "The Craft", href: "#the-craft" },
     { label: "The Team", href: "#heritage" },
-    { label: "The Wine", href: "/tipo-main-website/wine" },
+    { label: "The Wine", href: "/wine" },
   ];
 
   const experienceLinks = [
@@ -16,7 +16,7 @@ export default function Footer() {
     { label: "YouTube", href: "https://www.youtube.com/@TipoHeritage", target: "_blank" },
     { label: "Blogs", href: "https://link.heritagetipo.com/landing?v=2", target: "_blank" },
     { label: "Contact", href: "#contact" },
-    { label: "Press Kit", href: "/tipo-main-website/press-kit" },
+    { label: "Press Kit", href: "/press-kit" },
   ];
 
   const columns: { title: string; links: { label: string; href: string; target?: string }[] }[] = [
@@ -41,7 +41,7 @@ export default function Footer() {
         {/* Column 1 — Brand */}
         <div className="flex flex-col col-span-2 md:col-span-1">
           <img
-            src="/tipo-main-website/images/logo.webp"
+            src="/images/logo.webp"
             alt="TI:PO Po:Ro Apong logo"
             className="h-6 w-auto object-contain mb-3 self-start"
           />

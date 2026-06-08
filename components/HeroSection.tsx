@@ -89,19 +89,19 @@ export default function HeroSection() {
                     muted
                     loop
                     playsInline
-                    poster="/tipo-main-website/videos/reveal-video_poster.jpg"
+                    poster="/videos/reveal-video_poster.jpg"
                     id="bgVideo"
                     className="absolute inset-0 w-full h-full object-cover object-top" >
                     {/* Mobile-optimized source (served to narrow viewports) */}
                     <source
-                      src="/tipo-main-website/videos/reveal-video_bg_mobile.mp4"
+                      src="/videos/reveal-video_bg_mobile.mp4"
                       type="video/mp4"
                       media="(max-width: 767px)"
                     />
                     {/* WebM for better compression (Chrome, Firefox) */}
-                    <source src="/tipo-main-website/videos/reveal-video_bg_high.webm" type="video/webm" />
+                    <source src="/videos/reveal-video_bg_high.webm" type="video/webm" />
                     {/* MP4 fallback (Safari, older browsers) */}
-                    <source src="/tipo-main-website/videos/reveal-video_bg_high.mp4" type="video/mp4" />
+                    <source src="/videos/reveal-video_bg_high.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 
@@ -122,7 +122,7 @@ export default function HeroSection() {
         <div className="absolute top-[180px] inset-x-0 h-[calc(100%+80px)]">
           <div className="no-magnify absolute inset-0 pointer-events-none">
           <Image
-            src="/tipo-main-website/images/Himalaya no cutout.webp"
+            src="/images/Himalaya no cutout.webp"
             alt="Eastern Himalayas"
             fill
             className="object-cover [object-position:center_35%]"

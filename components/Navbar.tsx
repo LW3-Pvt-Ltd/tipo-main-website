@@ -67,7 +67,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="block no-magnify">
           <Image
-            src="/tipo-main-website/images/logo.webp"
+            src="/images/logo.webp"
             alt="TI:PO Po:Ro Apong logo"
             width={80}
             height={40}

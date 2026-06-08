@@ -11,7 +11,7 @@ export default function StoryIntro() {
           <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
             <div data-parallax-img className="absolute" style={{ inset: "-15%" }}>
               <Image
-                src="/tipo-main-website/images/latest new herb-collector .webp"
+                src="/images/latest new herb-collector .webp"
                 alt="Women herb collectors gathering botanicals in the Himalayan foothills"
                 fill
                 className="object-cover"

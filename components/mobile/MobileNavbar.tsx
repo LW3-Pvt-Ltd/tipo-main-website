@@ -23,7 +23,7 @@ export default function MobileNavbar() {
       <div className="flex items-center justify-between px-6 py-4">
         <a href="#top" className="block">
           <Image
-            src="/tipo-main-website/images/logo.webp"
+            src="/images/logo.webp"
             alt="TI:PO Po:Ro Apong logo"
             width={80}
             height={30}

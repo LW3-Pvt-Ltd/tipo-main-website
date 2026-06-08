@@ -79,11 +79,11 @@ export default function MobileHero() {
           muted
           loop
           playsInline
-          poster="/tipo-main-website/videos/reveal-video_poster.jpg"
+          poster="/videos/reveal-video_poster.jpg"
           className="absolute inset-0 w-full h-full object-cover object-center"
           style={{ willChange: "transform, opacity" }}
         >
-          <source src="/tipo-main-website/videos/Tipo reveal video vertical.mp4" type="video/mp4" />
+          <source src="/videos/Tipo reveal video vertical.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/15 pointer-events-none" />
       </div>

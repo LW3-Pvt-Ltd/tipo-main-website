@@ -22,9 +22,9 @@ export default function WinePage() {
           <BackButton />
 
           {/* Logo — centred */}
-          <a href="/tipo-main-website/#contact" className="absolute left-1/2 -translate-x-1/2">
+          <a href="/#contact" className="absolute left-1/2 -translate-x-1/2">
             <Image
-              src="/tipo-main-website/images/logo.webp"
+              src="/images/logo.webp"
               alt="TI:PO Po:Ro Apong logo"
               width={80}
               height={40}
@@ -42,7 +42,7 @@ export default function WinePage() {
         <div className="max-w-[clamp(480px,38vw,720px)] text-center flex flex-col items-center gap-6">
           {/* Motif */}
           <Image
-            src="/tipo-main-website/images/motif-latest.webp"
+            src="/images/motif-latest.webp"
             alt=""
             aria-hidden
             width={600}
@@ -72,7 +72,7 @@ export default function WinePage() {
 
           {/* Motif */}
           <Image
-            src="/tipo-main-website/images/motif-latest.webp"
+            src="/images/motif-latest.webp"
             alt=""
             aria-hidden
             width={600}

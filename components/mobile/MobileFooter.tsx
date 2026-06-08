@@ -5,8 +5,8 @@ import { useState } from "react";
 const linkMap: Record<string, { href: string; target?: string }> = {
   "The Craft": { href: "#mobile-the-craft" },
   "The Team": { href: "#mobile-heritage" },
-  "The Wine": { href: "/tipo-main-website/wine" },
-  "Press Kit": { href: "/tipo-main-website/press-kit" },
+  "The Wine": { href: "/wine" },
+  "Press Kit": { href: "/press-kit" },
   "Instagram": { href: "https://www.instagram.com/tipo.heritage", target: "_blank" },
   "YouTube": { href: "https://www.youtube.com/@TipoHeritage", target: "_blank" },
   "Blogs": { href: "https://link.heritagetipo.com/landing?v=2", target: "_blank" },
@@ -50,7 +50,7 @@ export default function MobileFooter() {
         <div className="flex flex-col">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/tipo-main-website/images/logo.webp"
+            src="/images/logo.webp"
             alt="TI:PO"
             className="h-[22px] w-auto object-contain mb-[10px] self-start"
           />

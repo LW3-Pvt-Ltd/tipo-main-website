@@ -7,7 +7,7 @@ export default function CommunitySection() {
         {/* Left — Image (shown after text on mobile) */}
         <div data-parallax-img className="order-1 md:order-1 md:self-center">
           <Image
-            src="/tipo-main-website/images/value-lives.webp"
+            src="/images/value-lives.webp"
             alt="Women of the Self Help Groups in traditional dresses"
             width={580}
             height={500}

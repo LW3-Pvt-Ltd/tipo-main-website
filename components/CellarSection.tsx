@@ -10,7 +10,7 @@ export default function CellarSection() {
           <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
             <div data-parallax-img className="absolute" style={{ inset: "-15%" }}>
               <Image
-                src="/tipo-main-website/images/latest new winery .webp"
+                src="/images/latest new winery .webp"
                 alt="Traditional winery with worker overseeing the process"
                 fill
                 className="object-cover"

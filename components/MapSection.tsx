@@ -27,7 +27,7 @@ export default function MapSection() {
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
         <div className="relative md:mb-16 mt-6 -mt-8 md:-mt-10">
           <Image
-            src="/tipo-main-website/images/New Assam Map.svg"
+            src="/images/New Assam Map.svg"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
             width={1200}
             height={600}
@@ -46,7 +46,7 @@ export default function MapSection() {
             }}
           >
             <Image
-              src="/tipo-main-website/images/Bottom bottle latest.webp"
+              src="/images/Bottom bottle latest.webp"
               alt="TI:PO bottle angled presentation"
               width={1055}
               height={2531}
@@ -66,7 +66,7 @@ export default function MapSection() {
             }}
           >
             <Image
-              src="/tipo-main-website/images/Bottom bottle latest.webp"
+              src="/images/Bottom bottle latest.webp"
               alt="TI:PO bottle angled presentation"
               width={375}
               height={900}
@@ -78,7 +78,7 @@ export default function MapSection() {
         {/* Motif + Contact & Distribution */}
         <div id="contact" className="relative z-10 mt-8 md:mt-[460px] xl:mt-[620px] 2xl:mt-[210px]">
           <Image
-            src="/tipo-main-website/images/motif-latest.webp"
+            src="/images/motif-latest.webp"
             alt="Decorative motif"
             width={600}
             height={60}

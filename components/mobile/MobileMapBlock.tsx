@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MobileMapBlock() {
   return (
-    <section className="bg-black py-14 px-6 relative">
+    <section className="bg-black pb-14 pt-8 px-6 relative">
       <div className="text-center flex flex-col gap-[14px] mb-8">
         <h2 className="tx-serif-light text-brand-gold leading-[1.2] m-0">
           <span className="block font-bold uppercase text-[20px] tracking-[0.18em]">

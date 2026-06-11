@@ -29,7 +29,7 @@ export default function MobileMapBlock() {
       </div>
 
       <Image
-        src="/images/Assam map updated.svg"
+        src="/images/assam_map_final version.svg"
         alt="Brahmaputra Valley origin"
         width={1200}
         height={600}

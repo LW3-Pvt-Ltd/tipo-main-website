@@ -27,7 +27,7 @@ export default function MapSection() {
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
         <div className="relative md:mb-16 mt-12 md:-mt-10">
           <Image
-            src="/images/Assam map updated.svg"
+            src="/images/assam_map_final version.svg"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
             width={1200}
             height={600}

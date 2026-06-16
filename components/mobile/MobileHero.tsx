@@ -6,8 +6,6 @@ export default function MobileHero() {
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const ctaRef = useRef<HTMLDivElement | null>(null);
-  const lockedRef = useRef(true);
-
   // Video autoplay
   useEffect(() => {
     const video = videoRef.current;
@@ -25,16 +23,10 @@ export default function MobileHero() {
     }
   }, []);
 
-  // Parallax + scroll lock + re-lock on return to top
+  // Parallax
   useEffect(() => {
     if (window.matchMedia("(min-width: 768px)").matches) return;
 
-    const preventTouch = (e: TouchEvent) => {
-      if (lockedRef.current) e.preventDefault();
-    };
-    const preventWheel = (e: WheelEvent) => {
-      if (lockedRef.current) e.preventDefault();
-    };
     const onScroll = () => {
       const y = window.scrollY;
       // Parallax
@@ -50,21 +42,16 @@ export default function MobileHero() {
       }
     };
 
-    document.addEventListener("touchmove", preventTouch, { passive: false });
-    document.addEventListener("wheel", preventWheel, { passive: false });
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
 
     return () => {
-      document.removeEventListener("touchmove", preventTouch);
-      document.removeEventListener("wheel", preventWheel);
       window.removeEventListener("scroll", onScroll);
     };
   }, []);
 
   const handleDiscover = (e: React.MouseEvent) => {
     e.preventDefault();
-    lockedRef.current = false;
     document.querySelector("#mobile-the-craft")?.scrollIntoView({ behavior: "smooth" });
   };
 

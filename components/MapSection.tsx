@@ -103,6 +103,13 @@ export default function MapSection() {
               </a>{" "}
               &nbsp;|&nbsp;{" "}
               <a
+                href="tel:+917002479797"
+                className="hover:text-white transition-colors duration-300"
+              >
+                +91 70024 79797
+              </a>{" "}
+              &nbsp;|&nbsp;{" "}
+              <a
                 href="https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com"
                 target="_blank"
                 rel="noopener noreferrer"

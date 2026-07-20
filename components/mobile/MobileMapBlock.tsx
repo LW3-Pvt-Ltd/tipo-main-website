@@ -85,6 +85,13 @@ export default function MobileMapBlock() {
           >
             +91 88220 92973
           </a>
+          {" "}&nbsp;|&nbsp;{" "}
+          <a
+            href="tel:+917002479797"
+            className="text-[#C8C8C8] no-underline hover:text-white transition-colors"
+          >
+            +91 70024 79797
+          </a>
           <br />
           <a
             href="https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com"

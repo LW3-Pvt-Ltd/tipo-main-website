@@ -80,13 +80,6 @@ export default function MobileMapBlock() {
         </h3>
         <p className="tx-body-medium text-[12px] leading-[1.7] text-[#C8C8C8] mt-[10px]">
           <a
-            href="tel:+918822092973"
-            className="text-[#C8C8C8] no-underline hover:text-white transition-colors"
-          >
-            +91 88220 92973
-          </a>
-          {" "}&nbsp;|&nbsp;{" "}
-          <a
             href="tel:+917002479797"
             className="text-[#C8C8C8] no-underline hover:text-white transition-colors"
           >

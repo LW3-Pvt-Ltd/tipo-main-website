@@ -96,13 +96,6 @@ export default function MapSection() {
             </h2>
             <p className="tx-body-medium text-[clamp(14px,0.97vw,20px)] leading-[1.4] md:leading-[1.8] text-[#C8C8C8]">
               <a
-                href="tel:+918822092973"
-                className="hover:text-white transition-colors duration-300"
-              >
-                +91 88220 92973
-              </a>{" "}
-              &nbsp;|&nbsp;{" "}
-              <a
                 href="tel:+917002479797"
                 className="hover:text-white transition-colors duration-300"
               >

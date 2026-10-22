@@ -11,8 +11,8 @@ const linkMap: Record<string, { href: string; target?: string }> = {
   "YouTube": { href: "https://www.youtube.com/@TipoHeritage", target: "_blank" },
   "Blogs": { href: "https://link.heritagetipo.com/landing?v=2", target: "_blank" },
   "Contact": { href: "#contact" },
-  "info@heritagetipo.com": {
-    href: "https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com",
+  "business@heritagetipo.com": {
+    href: "https://mail.google.com/mail/?view=cm&to=business@heritagetipo.com",
     target: "_blank",
   },
 };

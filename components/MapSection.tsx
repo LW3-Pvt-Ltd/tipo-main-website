@@ -103,12 +103,12 @@ export default function MapSection() {
               </a>{" "}
               &nbsp;|&nbsp;{" "}
               <a
-                href="https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com"
+                href="https://mail.google.com/mail/?view=cm&to=business@heritagetipo.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors duration-300 underline-offset-2 hover:underline"
               >
-                info@heritagetipo.com
+                business@heritagetipo.com
               </a>
             </p>
           </div>

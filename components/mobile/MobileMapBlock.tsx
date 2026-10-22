@@ -87,12 +87,12 @@ export default function MobileMapBlock() {
           </a>
           <br />
           <a
-            href="https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com"
+            href="https://mail.google.com/mail/?view=cm&to=business@heritagetipo.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#C8C8C8] no-underline hover:text-white transition-colors"
           >
-            info@heritagetipo.com
+            business@heritagetipo.com
           </a>
         </p>
       </div>
